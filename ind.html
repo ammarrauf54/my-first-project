@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logical Operators Example</title>
+</head>
+<body>
+  <h1>Logical Operators :-</h1>
+
+  <script>
+    // AND operator
+    let age = 20;
+    let hasLicense = true;
+
+    if (age >= 20 && hasLicense) {
+      console.log("You can drive a car");
+    } else {
+      console.log("You cannot drive a car");
+    }
+
+    // OR operator
+    let isBirthday = false;
+    let gotGoodResult = true;
+
+    if (isBirthday || gotGoodResult) {
+      console.log("You will get a gift");
+    } else {
+      console.log("You will not get a gift");
+    }
+
+    // NOT operator
+    let isWeekend = false;
+    if (!isWeekend) {
+      console.log("It’s a school day");
+    } else {
+      console.log("It’s weekend");
+    }
+
+    // Function example
+    function sayHello() {
+      console.log("Ammar");
+    }
+
+    sayHello();
+
+    // Function with user input
+    function calculateBMI() {
+      let weight = prompt("Enter your weight in kg:");
+      let height = prompt("Enter your height in meters:");
+
+      weight = Number(weight);
+      height = Number(height);
+
+      let bmi = weight / (height ** 2);
+      console.log("Your BMI is:", bmi);
+    }
+
+    // Example with parameters
+    function calculateBMIWithParams(weight, height) {
+      let bmi = weight / (height ** 2);
+      console.log("BMI (with parameters):", bmi);
+    }
+
+    function calculatePercentage(totalMarks, obtainedMarks) {
+      let percentage = (obtainedMarks / totalMarks) * 100;
+      console.log("Your percentage is:", percentage + "%");
+    }
+
+    // Function calls
+    // calculateBMI(); // uncomment if you want to take input
+    calculateBMIWithParams(70, 1.75);
+    calculatePercentage(500, 430);
+
+    //Function parameter
+    function calculateBMI(weight, height) {
+    let bmi = weight / height ** 2;
+    return bmi
+    }
+
+    //Function Arguments
+    let bmi = calculateBMI(75, 1.82);
+    alert(bmi)
+     
+    //Function parameter
+    function calculateAge(Birthyear){
+        let age = 19 
+        let Birthyear = 2005
+        if (age > 19)
+        console.log("eligible")
+        if (age < 19)
+        console.log("not eligible")
+    }
+  </script>
+</body>
+</html>
